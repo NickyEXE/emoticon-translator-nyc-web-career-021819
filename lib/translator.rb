@@ -21,6 +21,7 @@ end
 def get_japanese_emoticon(path,emoticon)
   # code goes here
   emohash = load_library(path)
+  emohash["get_emoticon"]
 
 end
 
