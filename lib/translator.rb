@@ -14,6 +14,7 @@ def load_library(path)
     #angel, [us emoji, japanese emoji]
     newhash[get_meaning][array[1]] = key
     newhash[get_emoticon][array[0]] = array[1]
+  end
 end
 puts load_library('lib/emoticons.yml')
 
