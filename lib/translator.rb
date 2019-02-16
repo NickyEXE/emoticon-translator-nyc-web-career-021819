@@ -2,7 +2,6 @@
 require 'yaml'
 require 'pry'
 
-binding.pry
 emoticons = YAML.load_file('/emoticons.yml')
 
 emoticons
