@@ -8,8 +8,8 @@ require 'pry'
 def load_library(path)
   # code goes here
   emoticons = YAML.load_file(path)
-  newhash = {get_meaning: {},
-            get_emoticon:{}}
+  newhash = {get_meaning => {},
+            get_emoticon => {}}
   emoticons.each do |key, array|
     #angel, [us emoji, japanese emoji]
     newhash[:get_meaning][array[1]] = key
