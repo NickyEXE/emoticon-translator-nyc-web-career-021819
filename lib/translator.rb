@@ -12,7 +12,7 @@ def load_library(path)
             get_emoticon:{}}
   emoticons.each do |key, array|
     #angel, [us emoji, japanese emoji]
-    get_meaning[array[1]] = key
+    newhash[get_meaning][array[1]] = key
 end
 puts load_library('lib/emoticons.yml')
 
