@@ -24,7 +24,7 @@ def get_japanese_emoticon(path,emoticon)
   if emohash["get_emoticon"].has_key?(emoticon)
     emohash["get_emoticon"][emoticon]
   else
-    puts "Sorry, that emoticon was not found"
+    "Sorry, that emoticon was not found"
   end
 end
 
