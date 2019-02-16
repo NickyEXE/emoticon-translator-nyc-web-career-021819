@@ -12,8 +12,8 @@ def load_library(path)
             "get_emoticon" => {}}
   emoticons.each do |key, array|
     #angel, [us emoji, japanese emoji]
-    newhash[get_meaning][array[1]] = key
-    newhash[get_emoticon][array[0]] = array[1]
+    newhash["get_meaning"][array[1]] = key
+    newhash["get_emoticon"][array[0]] = array[1]
   end
   newhash
 end
