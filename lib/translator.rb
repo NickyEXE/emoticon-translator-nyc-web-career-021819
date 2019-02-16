@@ -31,5 +31,8 @@ end
 def get_english_meaning(path,emoticon)
   emohash = load_library(path)
   if emohash["get_meaning"].has_key?(emoticon)
+    emohash["get_meaning"][emoticon]
+  else
+    "Sorry, that emoticon was not found"
   # code goes here
 end
