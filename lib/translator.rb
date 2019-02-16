@@ -1,7 +1,7 @@
 # require modules here
 require 'yaml'
 require 'pry'
-require_relative "emoticons.yml"
+require_relative 'emoticons.yml'
 
 emoticons = YAML.load_file('../emoticons.yml')
 
