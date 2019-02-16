@@ -28,7 +28,7 @@ def get_japanese_emoticon(path,emoticon)
   end
 end
 
-puts(load_library('lib/emoticons.yml'))
 def get_english_meaning
+  emohash = load_library(path)
   # code goes here
 end
