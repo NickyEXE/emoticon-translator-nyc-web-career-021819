@@ -21,8 +21,10 @@ end
 def get_japanese_emoticon(path,emoticon)
   # code goes here
   emohash = load_library(path)
-  emohash["get_emoticon"][emoticon]
-
+  if emohash["get_emoticon"].has_key?(emoticon)
+    emohash["get_emoticon"][emoticon]
+  else
+    puts "Sorry, that emoticon was not found"
 end
 
 puts(load_library('lib/emoticons.yml'))
