@@ -1,5 +1,5 @@
 # require modules here
-require yaml
+require 'yaml'
 require '../lib/emoticons.yml'
 require 'pry'
 
