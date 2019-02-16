@@ -8,7 +8,11 @@ require 'pry'
 def load_library(path)
   # code goes here
   emoticons = YAML.load_file(path)
-  emoticons
+  newhash = {get_meaning: {},
+            get_emoticon:{}}
+  emoticons.each do |key, array|
+    #angel, [us emoji, japanese emoji]
+    get_meaning[array[1]] = key
 end
 puts load_library('lib/emoticons.yml')
 
