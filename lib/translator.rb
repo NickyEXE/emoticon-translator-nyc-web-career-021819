@@ -15,6 +15,7 @@ def load_library(path)
     newhash[:get_meaning][array[1]] = key
     newhash[:get_emoticon][array[0]] = array[1]
   end
+  newhash
 end
 puts load_library('lib/emoticons.yml')
 
